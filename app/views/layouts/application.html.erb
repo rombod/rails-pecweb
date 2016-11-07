@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pecweb</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application.css', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application.js', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+ <div class="home">
+         
+         <div class="nav">
+                    <ul>
+                      <li><a class="active" href="#">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="engineering.html">Engineering</a></li>
+                      <li><a href="procurement.html">Procurement</a></li>
+                      <li><a href="construction.html">Construction Management</a></li>
+                      
+                          <li><a href="technology.html">Tec. Alli.</a></li>
+                          <li><a href="template.html">TDPSP</a></li>
+                          <li><a href="clean.html">clean</a></li>
+                          <li><a href="enhanced.html">EOR</a></li>                          
+                        
+                      <li><a href="experience.html">Experience</a></li>
+                      <li><a href="our.html">Leadership</a></li>
+                      <li><a href="career.html">Career</a></li>
+                      <li><a href="contact.html">Contact</a></li>                                            
+                   </ul>
+         </div><!--end of nav-->
+
+<%= yield %>
+
+<footer>
+
+    <div class="row">
+    <div class="col-md-6">
+
+          <p>&copy2016 Petro Engineering Canada Ltd.</p>
+          <ul>
+          <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>info@petroengineeringcanada.com</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>sales@petroengineeringcanada.com</a></li> 
+          <li><span class="glyphicon glyphicon-phone"></span>+1-(587) 351-9585</li>
+          <li><span class="glyphicon glyphicon-phone"></span>+1-(587) 351-9583</li>  
+          <li><span class="glyphicon glyphicon-phone"></span>Fax+1-(587) 351-9581</li>         
+          <li><a href="#"><span class="glyphicon glyphicon-signal "></span>http://www.petroengineeringcanada.com/</a></li>      
+          </ul> 
+
+    </div>
+
+
+    <div class="col-md-6">
+          <address>       
+          Mail Box: P.O. Box 73035 Calgary, AB T2W 6E4 - Canada<br>
+          Address Calgary Office - Canada:<br>
+          5614 Burbank Rd SE <br>
+          Unit E Calgary, AB T2H 1Z4 - Canada
+         </address>
+    </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
