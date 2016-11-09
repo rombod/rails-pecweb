@@ -1,35 +1,37 @@
 Rails.application.routes.draw do
-  get 'static_page/construction'
+    
 
-  get 'static_page/contact'
+  get 'static_pages/construction'
 
-  get 'static_page/engineering'
+  get 'static_pages/contact'
 
-  get 'static_page/enhanced'
+  get 'static_pages/engineering'
 
-  get 'static_page/experience'
+  get 'static_pages/enhanced'
 
-  get 'static_page/our'
+  get 'static_pages/experience'
 
-  get 'static_page/procurement'
+  get 'static_pages/our'
 
-  get 'static_page/technology'
+  get 'static_pages/procurement'
 
-  get 'static_page/template'
+  get 'static_pages/technology'
 
-  get 'static_page/career'
+  get 'static_pages/template'
 
-  get 'static_page/clean'
+  get 'static_pages/career'
 
-  get 'static_page/about'
+  get 'static_pages/clean'  
 
-  get 'static_page/index'
+  get 'static_pages/about'
+
+  get 'static_pages/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+    root 'static_pages#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
