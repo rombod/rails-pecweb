@@ -1,0 +1,774 @@
+/*// Place all the styles related to the static_page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/**** nav bar ****/
+/* line 8, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.nav ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+}
+
+/* line 18, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.nav li {
+  float: left;
+}
+
+/* line 22, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.nav li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* line 30, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.nav li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* line 35, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.nav li .dropdown {
+  display: inline-block;
+}
+
+/**** footer ****/
+/* line 42, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+footer {
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  padding-top: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 1200px;
+}
+
+/**** Home page ****/
+/* line 57, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+body {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+/* line 64, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .container {
+  height: 800px;
+  width: 1067px;
+  background: url(background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 100px;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+}
+
+/* line 79, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .container img {
+  margin-left: 400px;
+}
+
+/* line 83, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.container .background {
+  background: url(klematis.jpg) repeat;
+}
+
+/* line 88, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.container .background .transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+
+/* line 96, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.container .background.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* line 104, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .row {
+  margin-top: 100px;
+}
+
+/* line 109, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .row img {
+  margin-bottom: 100px;
+  margin-left: 25px;
+}
+
+/* line 115, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .row img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 125, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .text p {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 50px;
+  color: #006600;
+  text-align: center;
+}
+
+/* line 132, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .col-md-4 p {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 25px;
+  color: #006600;
+  text-align: center;
+}
+
+/* line 139, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .name {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 50px;
+  color: #006600;
+  text-align: center;
+}
+
+/* line 148, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.home .standard {
+  font-family: "Algerian", Georgia, Serif;
+  font-size: 50px;
+  color: #2d507e;
+  text-align: center;
+}
+
+/**** About page ****/
+/* line 160, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.about {
+  margin-top: 100px;
+}
+
+/* line 165, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.about .row .col-md-6 {
+  display: inline-block;
+}
+
+/* line 170, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.about .row .prow p {
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  box-shadow: -10px -10px 5px #55a616;
+}
+
+/* line 178, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.about .prow {
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* line 188, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.about span {
+  font-family: "arial", Georgia, Serif;
+  font-size: 30px;
+  color: #004d66;
+}
+
+/* line 195, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.about .srow {
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* line 206, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.about .aboutus {
+  margin-top: 10px;
+  box-shadow: -10px -10px 5px #55a616;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+}
+
+/**** engineering page ****/
+/* line 216, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering {
+  margin-top: 100px;
+}
+
+/* line 220, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .eng {
+  display: inline-block;
+  background-color: #668cff;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  width: 1200px;
+}
+
+/* line 235, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .eng .img-circle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 242, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .eng .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 248, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .prc {
+  display: inline-block;
+  background-color: #668cff;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  width: 1200px;
+}
+
+/* line 263, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .prc .img-circle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 270, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .prc .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 277, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .mec {
+  display: inline-block;
+  background-color: #668cff;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  width: 1200px;
+}
+
+/* line 292, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .mec .img-circle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 299, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .mec .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 305, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .iac {
+  display: inline-block;
+  background-color: #668cff;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  width: 1200px;
+}
+
+/* line 320, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .iac .img-circle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 327, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .iac .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 333, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .elc {
+  display: inline-block;
+  background-color: #668cff;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  width: 1200px;
+}
+
+/* line 348, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .elc .img-circle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 355, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .elc .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 361, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .civ {
+  display: inline-block;
+  background-color: #668cff;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  width: 1200px;
+}
+
+/* line 377, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .civ .img-circle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 384, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .civ .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 390, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .env {
+  display: inline-block;
+  background-color: #668cff;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  width: 1200px;
+}
+
+/* line 405, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .env .img-circle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 412, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .env .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 418, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .val {
+  display: inline-block;
+  background-color: #668cff;
+  margin-right: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  width: 1200px;
+}
+
+/* line 433, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .val .img-circle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 440, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.engineering .val .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/**** procurement page ****/
+/* line 448, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.procurement {
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 454, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.procurement .procu {
+  margin: 15px auto;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* line 466, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.procurement .col-md-4 .img-circle {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* line 471, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.procurement .col-md-4 img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 476, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.procurement .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 50px;
+  color: #006600;
+  text-align: center;
+}
+
+/**** construction page ****/
+/* line 486, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.construction {
+  margin: 15px auto;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 498, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.construction .col-md-4 .img-circle {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* line 503, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.construction.col-md-4 .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 508, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.construction .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 30px;
+  color: #006600;
+  text-align: center;
+}
+
+/**** technology page ****/
+/* line 518, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.technology {
+  margin: 15px auto;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 530, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.technology .col-md-4 .img-circle {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* line 535, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.technology.col-md-4 .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 540, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.technology .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 30px;
+  color: #006600;
+  text-align: center;
+}
+
+/**** template page ****/
+/* line 551, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.template {
+  margin: 15px auto;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 563, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.template .col-md-4 .img-circle {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* line 568, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.template .col-md-4 .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 573, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.template .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 30px;
+  color: #006600;
+  text-align: center;
+}
+
+/**** clean page ****/
+/* line 584, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.clean {
+  margin: 15px auto;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 596, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.clean .col-md-4 .img-circle {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* line 601, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.clean .col-md-4 .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 606, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.clean .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 30px;
+  color: #006600;
+  text-align: center;
+}
+
+/**** enhanced page ****/
+/* line 618, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.enhanced {
+  margin: 15px auto;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 100px;
+  width: 1200;
+}
+
+/* line 630, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.enhanced .col-md-4 .img-circle {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/* line 635, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.enhanced .col-md-4 .img-circle:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+}
+
+/* line 640, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.enhanced .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 30px;
+  color: #006600;
+  text-align: center;
+}
+
+/**** experience page ****/
+/* line 651, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.experience {
+  margin: 15px auto;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 666, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.experience .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 50px;
+  color: #006600;
+  text-align: center;
+}
+
+/**** our page ****/
+/* line 677, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.our {
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 690, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.our .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 50px;
+  color: #006600;
+  text-align: center;
+}
+
+/* line 697, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.our .team {
+  margin-left: 240px;
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+}
+
+/**** career page ****/
+/* line 710, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.career {
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 15px;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 722, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.career .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 50px;
+  color: #006600;
+  text-align: center;
+}
+
+/* line 729, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.career .pic {
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+}
+
+/**** contact page ****/
+/* line 738, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.contact {
+  border: 2px solid #ccddff;
+  border-radius: 5px;
+  box-shadow: -10px -10px 5px #55a616;
+  font-family: "arial", Georgia, Serif;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 100px;
+  width: 1200px;
+}
+
+/* line 749, c:/pecweb/app/assets/stylesheets/static_pages.scss */
+.contact .head {
+  font-family: "Vineta BT", Georgia, Serif;
+  font-size: 50px;
+  color: #006600;
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
