@@ -1,37 +1,66 @@
 Rails.application.routes.draw do
-    
+  
 
-  get 'static_pages/construction'
+  #get 'static_pages/construction'
+  get 'construction', to: 'static_pages#construction'
 
-  get 'static_pages/contact'
+  #get 'static_pages/contact'
+  get 'contact', to: 'static_pages#contact'
 
-  get 'static_pages/engineering'
+  #get 'static_pages/engineering'
+  get 'engineering', to: 'static_pages#engineering'
 
-  get 'static_pages/enhanced'
+  #get 'static_pages/enhanced'
+  get 'enhanced', to: 'static_pages#enhanced'
 
-  get 'static_pages/experience'
+  #get 'static_pages/experience'
+  get 'experience', to: 'static_pages#experience'
 
-  get 'static_pages/our'
+  #get 'static_pages/our'
+  get 'our', to: 'static_pages#our'
 
-  get 'static_pages/procurement'
+  #get 'static_pages/procurement'
+  get 'procurement', to: 'static_pages#procurement'
 
-  get 'static_pages/technology'
+  #get 'static_pages/technology'
+  get 'technology', to: 'static_pages#technology'
 
-  get 'static_pages/template'
+  #get 'static_pages/template'
+  get 'template', to: 'static_pages#template'
 
-  get 'static_pages/career'
+  #get 'static_pages/career'
+  get 'career', to: 'static_pages#career'
 
-  get 'static_pages/clean'  
+  #get 'static_pages/clean'
+  get 'clean', to: 'static_pages#clean'  
 
-  get 'static_pages/about'
+  #get 'static_pages/about'
 
-  get 'static_pages/index'
+  get 'about', to: 'static_pages#about'
+
+  #get 'static_pages/index'
+  get 'index', to: 'static_pages#index'
+
+  root 'static_pages#index'
+
+  get 'signup'  => 'users#new' 
+  resources :users
+
+  get 'login' => 'sessions#new'
+  
+  post 'login' => 'sessions#create'
+  
+  delete 'logout' => 'sessions#destroy'
+
+  
+  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-    root 'static_pages#index'
+    
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -41,6 +70,8 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+
+ 
 
   # Example resource route with options:
   #   resources :products do
