@@ -55,3 +55,7 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
+#require twitter/bootstrap
+
+gem 'therubyracer'
+gem 'less-rails-bootstrap'
