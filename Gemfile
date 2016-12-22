@@ -59,3 +59,4 @@ end
 
 gem 'therubyracer'
 gem 'less-rails-bootstrap'
+
