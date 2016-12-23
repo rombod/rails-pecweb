@@ -64,7 +64,7 @@ body {
   height: 800px;
   width: 1067px;
   background-image: url("background.jpg");
-  /*background-image: url(<%= '/assets/stylesheets/background.jpg' %>)*/ 
+  /*background-image: url(<%= 'background.jpg' %>)*/ 
  
   background-size: cover;
   margin-top: 100px;  
@@ -78,10 +78,7 @@ body {
   margin-left: 400px;
 }
 
-.container .background {
-    background: url(klematis.jpg) repeat;
-    
-}
+
 
 .container .background .transbox {
     margin: 30px;
