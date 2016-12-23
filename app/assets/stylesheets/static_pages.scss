@@ -63,7 +63,7 @@ body {
  .home .container {
   height: 800px;
   width: 1067px;
-  background-image: url("/assets/background.jpg");
+  background-image: image-url("background.jpg");
   /*background-image: url(<%= 'background.jpg' %>)*/ 
  
   background-size: cover;
