@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   
 
-  #get 'static_pages/forcast'
   
-  get 'forcast', to: 'static_pages#forcast'
 
   #get 'static_pages/construction'
   get 'construction', to: 'static_pages#construction'

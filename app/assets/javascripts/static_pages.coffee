@@ -3,19 +3,37 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-var main = function() {
-    $('#image-url').keyup(function() {
-        var url = $(this).val();
-        $('.thumbnail img').attr('src', url);
-    });
-    $('#top-text').keyup(function() {
-        var top = $(this).val();
-        $('.top-caption').text(top);
-    });
-    $('#bottom-text').keyup(function() {
-        var bottom = $(this).val();
-        $('.bottom-caption').text(bottom);
-    });
-};
-$(document).ready(main);
+$('.parallax-window').parallax({imageSrc: 'background.jpg'});
 
+
+
+function countChar(val) {
+
+    var len = val.value.length;
+    var ctext = len + " Chars";
+
+    var str = val.value;
+    var parts = [];
+    var partSize = 160;
+
+    while (str) {
+        if (str.length < partSize) {
+            var rtext = (partSize - str.length) + " Chars Remaining";
+            parts.push(str);
+            break;
+        }
+        else {
+            parts.push(str.substr(0, partSize));
+            str = str.substr(partSize);
+        }
+
+
+
+    }
+    var ptext = parts.length + " Parts";
+
+    $('#text-character').val(ctext);
+    $('#text-parts').val(ptext);
+    $('#text-remaining').val(rtext);
+
+}
